@@ -115,6 +115,10 @@
     <ProjectReference>
       <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
     </ProjectReference>
+    <Link>
+      <AdditionalLibraryDirectories>..\include-lib\Expat-2.6.2;..\include-lib\zlib-1.3.1;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zlib.lib;libexpat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -131,6 +135,10 @@
     <ProjectReference>
       <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
     </ProjectReference>
+    <Link>
+      <AdditionalLibraryDirectories>..\include-lib\Expat-2.6.2;..\include-lib\zlib-1.3.1;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zlib.lib;libexpat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -147,6 +155,10 @@
     <ProjectReference>
       <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
     </ProjectReference>
+    <Link>
+      <AdditionalLibraryDirectories>..\include-lib\Expat-2.6.2;..\include-lib\zlib-1.3.1;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zlib.lib;libexpat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -163,8 +175,12 @@
     <ProjectReference>
       <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
     </ProjectReference>
+    <Link>
+      <AdditionalLibraryDirectories>..\include-lib\Expat-2.6.2;..\include-lib\zlib-1.3.1;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>zlib.lib;libexpat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
-<ItemGroup>
+  <ItemGroup>
     <ClInclude Include="src\CanMessage.h" />
     <ClInclude Include="src\MdfAttachment.h" />
     <ClInclude Include="src\MdfChannel.h" />
@@ -210,7 +226,7 @@
       <Project>{4ea4c08d-2555-493b-b3b6-0e26381d0a09}</Project>
     </ProjectReference>
   </ItemGroup>
-    <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
 </Project>
