@@ -5,3 +5,4 @@
 5. mdflibrary: additional lib dir: zlib.lib dependency (link - general)
 6. mdflibrary: additional lib dir: libexpat.lib dependency (link - general)
 7. mdflibrary: input - additional dependency (zlib.lib;libexpat.lib)
+8. copy zlib.dll and libexpat.dll to runtime env
